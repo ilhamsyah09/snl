@@ -1,0 +1,322 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header start */
+
+header.header {
+    height: 112px;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: grid;
+    background-color: #fff;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+nav .container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+nav .nav-left,
+nav .nav-right {
+    display: flex;
+    align-items: center;
+}
+nav .nav-left .logo-parent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+nav .nav-left .logo-parent .logo-text {
+    gap: 10px;
+    align-items: flex-end;
+}
+nav .nav-left .logo-parent .text p {
+    margin-bottom: 0;
+    font-size: 16.53px;
+    font-weight: 500;
+    line-height: 16px;
+    color: black;
+}
+nav .nav-left button {
+    padding-right: 30px;
+}
+nav .nav-right .logo-wa {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: #bcbcbc solid 1px;
+    border-radius: 30px;
+}
+nav .nav-right .logo-wa p {
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+}
+/* Header end */
+
+/* Home 1 carousel start */
+section.home1.carousel {
+    background-color: #1b0a05;
+}
+section.home1.carousel .carousel-indicators {
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start;
+    left: 180px;
+    bottom: 80px;
+}
+section.home1.carousel .carousel-indicators button {
+    border-radius: 0;
+    margin-right: 1px;
+    margin-left: 1px;
+    width: 58px;
+}
+section.home1.carousel .carousel-item .img-slide img {
+    max-height: 860px;
+    max-width: 66%;
+    float: right;
+}
+section.home1.carousel .carousel-item .text {
+    position: absolute;
+    left: 180px;
+    top: 27%;
+    width: 48%;
+}
+section.home1.carousel .carousel-item .text p {
+    font-size: 17px;
+    color: #fff;
+}
+section.home1.carousel .carousel-item .text h3 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+section.home1.carousel .carousel-item .text .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 43px;
+    width: 178px;
+    background-color: black;
+    border-radius: 30px;
+}
+section.home1.carousel .carousel-item .text .button p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0;
+}
+/* home 1 carousel end */
+
+/* Home 2 product start */
+section.home2.product {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+section.home2.product .heading .title h3 {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 46px;
+}
+section.home2.product .heading .subtitle p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+section.home2.product .carousel .carousel-indicators {
+    bottom: -60px;
+}
+section.home2.product .carousel .carousel-indicators button {
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+section.home2.product .row .icon {
+    display: flex;
+    justify-content: center;
+}
+section.home2.product .row .text p {
+    font-size: 13.35px;
+    font-weight: 600;
+    text-align: center;
+}
+section.home2.product .button {
+    height: 43px;
+    width: 263px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    position: relative;
+    top: 110px;
+    margin: auto;
+}
+section.home2.product .button p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0;
+}
+/* Home 2 product end */
+
+/* home 3 process start */
+section.home3.process {
+    margin-top: 100px;
+    max-height: 632px;
+}
+section.home3.process .container {
+    background-color: #eaeceb;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+section.home3.process .text {
+    position: relative;
+    right: 12%;
+}
+section.home3.process .text .title h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 35px;
+} 
+section.home3.process .text .subtitle p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;   
+    margin-bottom: 35px; 
+}
+section.home3.process .text .button {
+    height: 43px;
+    width: 174px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+}
+section.home3.process .text .button p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0;
+}
+/* home 3 process end */
+
+/* Footer start */
+footer.footer {
+    margin-top: 130px;
+    background-color: #f4f4f4;
+}
+footer.footer .container {
+    
+}
+footer.footer .left {
+    display: flex;
+    align-items: center;
+}
+footer.footer .left .img {
+    position: relative;
+}
+footer.footer .left .img img {
+    height: 189px;
+    width: auto;
+}
+footer.footer .text .title h3 {
+    font-size: 24.88px;
+    font-weight: 600;
+}
+footer.footer .text .title h3 strong {
+    font-weight: 800;
+}
+footer.footer .text .subtitle p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14.49px;
+    font-weight: 500;
+    color: #b9b9b9;
+    margin-bottom: 0;
+}
+footer.footer .list-items {
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    height: 100%;
+    align-items: center;
+    justify-content: end;
+}
+footer.footer .list-items .item {
+    border-right: solid black 0.5px;
+    text-align: center;
+    height: 72px;
+}
+footer.footer .list-items .item:last-of-type {
+    border: none;
+}
+footer.footer .list-items .icon {
+    padding-bottom: 8px;
+}
+footer.footer .list-items .item p {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+footer.footer .list-items .item h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+footer.footer .copyright {
+    background-color: #fff;
+}
+footer.footer .copyright .container {
+    padding-top: 40px;
+    padding-bottom: 24px;
+}
+footer.footer .copyright .text h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+footer.footer .copyright .text p {
+    font-size: 10.96;
+    font-weight: 500;
+    color: #b9b9b9;
+}
+footer.footer .btn-back {
+    background-color: #f8f8f8;
+    position: relative;
+}
+footer.footer .btn-back .button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 43px;
+    width: 175px;
+    background-color: #c9c9c9;
+    border-radius: 30px;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    bottom: 20px;
+}
+footer.footer .btn-back .button p {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+}
+/* Footer end */
