@@ -1,7 +1,9 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
-
+.main-contents {
+    overflow: hidden;
+}
 /* Header start */
 
 header.header {
@@ -86,7 +88,7 @@ section.home1.carousel .carousel-item .img-slide img {
 section.home1.carousel .carousel-item .text {
     position: absolute;
     left: 180px;
-    top: 27%;
+    top: 16%;
     width: 48%;
 }
 section.home1.carousel .carousel-item .text p {
@@ -221,8 +223,8 @@ footer.footer {
     margin-top: 130px;
     background-color: #f4f4f4;
 }
-footer.footer .container {
-    
+footer.footer .container .row {
+    height: 170px;
 }
 footer.footer .left {
     display: flex;
@@ -232,8 +234,10 @@ footer.footer .left .img {
     position: relative;
 }
 footer.footer .left .img img {
-    height: 189px;
+    max-height: 189px;
     width: auto;
+    position: relative;
+    bottom: 21px;
 }
 footer.footer .text .title h3 {
     font-size: 24.88px;
@@ -319,4 +323,230 @@ footer.footer .btn-back .button p {
     font-weight: 500;
     line-height: 24px;
 }
+.mobile-version {
+    display: none;
+}
 /* Footer end */
+
+/* Responsive */
+@media screen  and (max-width: 1450px) {
+    section.home1.carousel .carousel-item .text {
+        top: 10%;
+        left: 60px;
+    }
+    section.home1.carousel .carousel-item .text h3 {
+        font-size: 36px;
+    }
+    section.home1.carousel .carousel-indicators {
+        left: 60px;
+        bottom: 40px;
+    }
+    /* Home 1 carousel end */
+    section.home3.process .text .title h3 {
+        font-size: 32px;
+    }
+    section.home3.process .text .subtitle p {
+        font-size: 16px;
+    }
+    /* Home 3 process */
+}
+@media screen and (max-width: 1200px) {
+    section.home1.carousel .carousel-item .text {
+        width: 50%;
+    }
+    section.home1.carousel .carousel-item .text h3 {
+        font-size: 28px;
+    }
+    /* Home 1 carousel end */
+    section.home3.process .text .title h3 {
+        font-size: 24px;
+    }
+    section.home3.process .text .subtitle p {
+        font-size: 14px;
+    }
+    section.home3.process {
+        height: auto;
+    }
+    section.home3.process .text .title h3,
+    section.home3.process .text .subtitle p {
+        margin-bottom: 14px;
+    }
+    section.home3.process .img-banner img {
+        max-width: 540px;
+    }
+    /* Home 3 process end */
+    footer.footer .text .title h3 {
+        font-size: 18px;
+    }
+    /* Footer end */
+}
+
+@media screen and (max-width: 992px) {
+    section.home1.carousel .carousel-indicators {
+        left: 60px;
+        bottom: 10px;
+    }
+    section.home1.carousel .carousel-item .text h3 {
+        font-size: 24px;
+    }
+    section.home3.process .img-banner img {
+        max-width: 350px;
+    }
+    section.home3.process .text .title h3 {
+        font-size: 18px;
+    }
+    section.home3.process .text .subtitle p {
+        font-size: 11px;
+    }
+    /* Home 1 carousel end */
+    /* footer.footer .btn-back {
+        top: 280px;
+    }
+    footer.footer .container {
+        height: auto;
+    } */
+    /* footer end  */
+}
+
+@media screen and (max-width: 860px) {
+    section.home1.carousel .carousel-indicators {
+        left: 60px;
+        bottom: -10px;
+    }
+    section.home1.carousel .carousel-item .text {
+        width: 70%;
+    }
+    section.home1.carousel .carousel-item .text h3 {
+        font-size: 20px;
+        margin-bottom: 6%;
+    }
+    section.home1.carousel .carousel-item .text p {
+        font-size: 13px;
+    }
+    section.home1.carousel .carousel-item .text .button {
+        
+        height: 33px;
+        width: 168px;
+        background-color: black;
+        border-radius: 30px;
+    }
+    section.home1.carousel .carousel-item .text .button p {
+        font-size: 12px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 0;
+    }
+    /* Home 1 carousel end */
+    section.home2.product .button {
+        
+        height: 33px;
+        width: 208px;
+        background-color: black;
+        border-radius: 30px;
+    }
+    section.home2.product .button p {
+        font-size: 12px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 0;
+    }
+    /* Home 2 product end */
+    section.home3.process .text .button {
+        
+        height: 33px;
+        width: 168px;
+        background-color: black;
+        border-radius: 30px;
+    }
+    section.home3.process .text .button p {
+        font-size: 12px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 0;
+    }
+    /* Home 3 process end */
+}
+
+@media screen and (max-width: 767px) {
+    section.home1.carousel {
+        background-color: white;
+    }
+    section.home1.carousel .carousel-item .text {
+        display: none;
+    }
+    section.home1.carousel .carousel-item .img-slide img {
+        max-width: 767px;
+        height: 500px;   
+    }
+    .mobile-version {
+        background-color: #1b0a05;
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .mobile-version .text p {
+        color: #fff;
+    }
+    .mobile-version .text h3 {
+        color: #fff;
+    }
+    .mobile-version .text .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 33px;
+        width: 158px;
+        background-color: black;
+        border-radius: 30px;
+        margin-top: 20px;
+    }
+    .mobile-version .text .button p {
+        font-size: 11px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 0;
+    }
+    /* Home 1 carousel end */
+    section.home2.product .heading .title h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    section.home2.product .heading .subtitle p {
+        font-size: 14px;
+    }
+    /* Home 2 product */
+    section.home3.process .img-banner img {
+        /* max-width: 350px; */
+    }
+    section.home3.process .container {
+        flex-wrap: wrap;
+    }
+    section.home3.process .text {
+        right: 0;
+        padding: 20px;
+        
+    }
+    /* Home 3 process */
+}
+
+@media screen and (max-width: 496px) {
+    section.home1.carousel .carousel-item .img-slide img {
+        max-width: 496px;
+        height: auto;   
+    }
+    .logo-parent .logo-text .text {
+        display: none;
+    }
+    .mobile-version {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .mobile-version .text p {
+        font-size: 10px;
+    }
+    .mobile-version .text h3 {
+        font-size: 16px;
+    }
+    /* Home 1 carousel end */
+}
