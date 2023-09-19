@@ -116,6 +116,9 @@ section.home1.carousel .carousel-item .text .button p {
     color: #fff;
     margin-bottom: 0;
 }
+.mobile-version {
+    display: none;
+}
 /* home 1 carousel end */
 
 /* Home 2 product start */
@@ -223,8 +226,11 @@ footer.footer {
     margin-top: 130px;
     background-color: #f4f4f4;
 }
-footer.footer .container .row {
+/* footer.footer .container .row {
     height: 170px;
+} */
+footer.footer .col-lg-6.col-md-12.col-sm-12.left {
+    max-height: 154px;
 }
 footer.footer .left {
     display: flex;
@@ -242,6 +248,7 @@ footer.footer .left .img img {
 footer.footer .text .title h3 {
     font-size: 24.88px;
     font-weight: 600;
+    line-height: 26px;
 }
 footer.footer .text .title h3 strong {
     font-weight: 800;
@@ -250,12 +257,17 @@ footer.footer .text .subtitle p {
     font-family: 'Fira Sans', sans-serif;
     font-size: 14.49px;
     font-weight: 500;
-    color: #b9b9b9;
+    line-height: 16px;
+    color: #4c4c4c;
     margin-bottom: 0;
 }
 footer.footer .list-items {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3,200px);
+    height: 100%;
+    align-items: center;
+    justify-content: end; */
+    display: flex;
     height: 100%;
     align-items: center;
     justify-content: end;
@@ -264,6 +276,7 @@ footer.footer .list-items .item {
     border-right: solid black 0.5px;
     text-align: center;
     height: 72px;
+    width: 200px;
 }
 footer.footer .list-items .item:last-of-type {
     border: none;
@@ -282,28 +295,33 @@ footer.footer .list-items .item h6 {
     margin-bottom: 0;
 }
 
-footer.footer .copyright {
+section.copyright {
     background-color: #fff;
 }
-footer.footer .copyright .container {
-    padding-top: 40px;
-    padding-bottom: 24px;
+section.copyright {
+    /* max-height: 90px; */
+    margin-top: 20px;
 }
-footer.footer .copyright .text h4 {
+section.copyright .container {
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+section.copyright .text h4 {
     font-family: 'Fira Sans', sans-serif;
     font-size: 13px;
     font-weight: 500;
 }
-footer.footer .copyright .text p {
-    font-size: 10.96;
+section.copyright .text p {
+    font-size: 10.96px ;
     font-weight: 500;
     color: #b9b9b9;
 }
-footer.footer .btn-back {
+section.copyright .btn-back {
     background-color: #f8f8f8;
     position: relative;
 }
-footer.footer .btn-back .button {
+section.copyright .btn-back .button {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -316,7 +334,7 @@ footer.footer .btn-back .button {
     margin: auto;
     bottom: 20px;
 }
-footer.footer .btn-back .button p {
+section.copyright .btn-back .button p {
     margin-bottom: 0;
     color: #fff;
     font-size: 15px;
@@ -402,6 +420,13 @@ footer.footer .btn-back .button p {
     footer.footer .container {
         height: auto;
     } */
+    footer.footer .list-items {
+        /* height: 189px; */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        gap: 20px;
+    }
+    
     /* footer end  */
 }
 
@@ -464,7 +489,11 @@ footer.footer .btn-back .button p {
     /* Home 3 process end */
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) { 
+    header.header {
+        height: 80px;
+    }
+    /* header end */
     section.home1.carousel {
         background-color: white;
     }
@@ -525,9 +554,22 @@ footer.footer .btn-back .button p {
         
     }
     /* Home 3 process */
+    footer.footer .list-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer.footer .list-items .item {
+        border: none;
+    }
+    /* footer end */
 }
 
 @media screen and (max-width: 496px) {
+    nav .nav-left {
+        width: 100%;
+        justify-content: space-between;
+    }
+    /* Header */
     section.home1.carousel .carousel-item .img-slide img {
         max-width: 496px;
         height: auto;   
@@ -546,4 +588,16 @@ footer.footer .btn-back .button p {
         font-size: 16px;
     }
     /* Home 1 carousel end */
+    footer.footer .col-lg-6.col-md-12.col-sm-12.left {
+        max-height: 100%;
+        padding-top: 20px;
+    }
+    /* footer end */
+    section.copyright {
+        padding-top: 20px;
+    }
+    section.copyright .text p {
+        margin-bottom: 40px;
+    }
+    /* copyright end */
 }
