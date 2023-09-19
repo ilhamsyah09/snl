@@ -88,8 +88,9 @@ section.home1.carousel .carousel-item .img-slide img {
 section.home1.carousel .carousel-item .text {
     position: absolute;
     left: 180px;
-    top: 16%;
-    width: 48%;
+    /* top: 16%; */
+    bottom: 173px;
+    width: 43%;
 }
 section.home1.carousel .carousel-item .text p {
     font-size: 17px;
@@ -346,8 +347,9 @@ section.copyright .btn-back .button p {
 /* Responsive */
 @media screen  and (max-width: 1450px) {
     section.home1.carousel .carousel-item .text {
-        top: 10%;
+        
         left: 60px;
+        bottom: 16%;
     }
     section.home1.carousel .carousel-item .text h3 {
         font-size: 36px;
@@ -542,9 +544,7 @@ section.copyright .btn-back .button p {
         font-size: 14px;
     }
     /* Home 2 product */
-    section.home3.process .img-banner img {
-        /* max-width: 350px; */
-    }
+    
     section.home3.process .container {
         flex-wrap: wrap;
     }
