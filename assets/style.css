@@ -45,7 +45,7 @@ nav .nav-left .logo-parent .text p {
 nav .nav-left button {
     padding-right: 30px;
 }
-nav .nav-right .logo-wa {
+nav .nav-right .logo-wa button {
     padding-left: 20px;
     padding-right: 20px;
     height: 32px;
@@ -55,7 +55,7 @@ nav .nav-right .logo-wa {
     border: #bcbcbc solid 1px;
     border-radius: 30px;
 }
-nav .nav-right .logo-wa p {
+nav .nav-right .logo-wa button p {
     margin-bottom: 0;
     font-size: 13px;
     font-weight: 500;
@@ -180,7 +180,7 @@ section.home2.product .view-product button p {
 
 /* home 3 process start */
 section.home3.process {
-    margin-top: 100px;
+    margin-top: 80px;
     max-height: 632px;
 }
 section.home3.process .container {
@@ -189,6 +189,9 @@ section.home3.process .container {
     align-items: center;
     position: relative;
 }
+/* section.home3.process .image-phone {
+    display: ;
+} */
 section.home3.process .widget-image {
     background-image: url('images/banner-bottom.png');
     background-repeat: no-repeat;
@@ -196,7 +199,7 @@ section.home3.process .widget-image {
     height: 100%;
     width: auto;
 }
-section.home3.process .mobile-image {
+section.home3.process .col-md-12 {
     display: none;
 }
 section.home3.process .text {
@@ -333,7 +336,7 @@ section.copyright .btn-back {
     background-color: #f8f8f8;
     position: relative;
 }
-section.copyright .btn-back .button {
+section.copyright .btn-back button {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -346,7 +349,7 @@ section.copyright .btn-back .button {
     margin: auto;
     bottom: 20px;
 }
-section.copyright .btn-back .button p {
+section.copyright .btn-back button p {
     margin-bottom: 0;
     color: #fff;
     font-size: 15px;
@@ -458,42 +461,42 @@ section.copyright .btn-back .button p {
     section.home1.carousel .carousel-item .text p {
         font-size: 13px;
     }
-    section.home1.carousel .carousel-item .text .button {
+    section.home1.carousel .carousel-item .text button {
         
         height: 33px;
         width: 168px;
         background-color: black;
         border-radius: 30px;
     }
-    section.home1.carousel .carousel-item .text .button p {
+    section.home1.carousel .carousel-item .text button p {
         font-size: 12px;
         font-weight: 500;
         color: #fff;
         margin-bottom: 0;
     }
     /* Home 1 carousel end */
-    section.home2.product .button {
+    section.home2.product .view-product button {
         
         height: 33px;
         width: 208px;
         background-color: black;
         border-radius: 30px;
     }
-    section.home2.product .button p {
+    section.home2.product .view-product button p {
         font-size: 12px;
         font-weight: 500;
         color: #fff;
         margin-bottom: 0;
     }
     /* Home 2 product end */
-    section.home3.process .text .button {
+    section.home3.process .text button {
         
         height: 33px;
         width: 168px;
         background-color: black;
         border-radius: 30px;
     }
-    section.home3.process .text .button p {
+    section.home3.process .text button p {
         font-size: 12px;
         font-weight: 500;
         color: #fff;
@@ -529,7 +532,7 @@ section.copyright .btn-back .button p {
     .mobile-version .text h3 {
         color: #fff;
     }
-    .mobile-version .text .button {
+    .mobile-version .text button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -540,7 +543,7 @@ section.copyright .btn-back .button p {
         border-radius: 30px;
         margin-top: 20px;
     }
-    .mobile-version .text .button p {
+    .mobile-version .text button p {
         font-size: 11px;
         font-weight: 500;
         color: #fff;
@@ -554,7 +557,7 @@ section.copyright .btn-back .button p {
     section.home2.product .heading p {
         font-size: 14px;
     }
-    /* Home 2 product */
+    /* Home 2 product end */
     
     section.home3.process .container {
         flex-wrap: wrap;
@@ -564,10 +567,10 @@ section.copyright .btn-back .button p {
         padding: 20px;
         
     }
-    /* section.home3.process .mobile-image {
-        display: flex;
-    } */
-    /* Home 3 process */
+    section.home3.process .col-md-12 {
+        display: block;
+    }
+    /* Home 3 process end */
     footer.footer .list-items {
         flex-wrap: wrap;
         justify-content: center;
