@@ -162,7 +162,7 @@ section.home2.product .heading p {
 }
 section.home2.product .carousel .carousel-indicators {
     bottom: -90px;
-    gap: 18px;
+    gap: 10px;
 }
 section.home2.product .carousel .carousel-indicators button {
     background-color: black;
