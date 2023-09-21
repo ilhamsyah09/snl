@@ -8,8 +8,8 @@
 
 header.header {
     height: 112px;
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: grid;
     background-color: #fff;
 }
@@ -35,7 +35,7 @@ nav .nav-left .logo-parent .logo-text {
     gap: 10px;
     align-items: flex-end;
 }
-nav .nav-left .logo-parent .text-caption p {
+nav .nav-left .logo-parent .text p {
     margin-bottom: 0;
     font-size: 16.53px;
     font-weight: 600;
@@ -61,6 +61,10 @@ nav .nav-right .logo-wa button {
     font-weight: 500;
     color: black;
 }
+nav .offcanvas .offcanvas-body ul .nav-item a.nav-link {
+    font-size: 16px;
+    font-weight: 600;
+}
 /* Header end */
 
 /* Home 1 carousel start */
@@ -71,7 +75,7 @@ section.home1.carousel .carousel-indicators {
     margin-left: 0;
     display: flex;
     justify-content: flex-start;
-    left: 180px;
+    left: 13.1%;
     bottom: 80px;
 }
 section.home1.carousel .carousel-indicators button {
@@ -81,13 +85,13 @@ section.home1.carousel .carousel-indicators button {
     width: 58px;
 }
 section.home1.carousel .carousel-item .img-slide img {
-    max-height: 860px;
+    max-height: 861px;
     max-width: 66%;
     float: right;
 }
 section.home1.carousel .carousel-item .text-caption {
     position: absolute;
-    left: 180px;
+    left: 13.1%;
     /* top: 16%; */
     bottom: 173px;
     width: 43%;
@@ -95,11 +99,16 @@ section.home1.carousel .carousel-item .text-caption {
 section.home1.carousel .carousel-item .text-caption p {
     font-size: 17px;
     color: #fff;
+    margin-bottom: 28px;
+    line-height: 26px;
+    letter-spacing: 1px;
 }
+
 section.home1.carousel .carousel-item .text-caption h3 {
     font-size: 40px;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+    line-height: 42px;
 }
 section.home1.carousel .carousel-item .text-caption button {
     display: flex;
@@ -133,20 +142,27 @@ section.home2.product {
     padding-top: 120px;
     padding-bottom: 80px;
 }
+section.home2.product .heading {
+    display: grid;
+    justify-content: center;
+}
 section.home2.product .heading h3 {
     font-size: 35px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 46px;
+    margin-bottom: 50px;
 }
 section.home2.product .heading p {
     font-family: 'Fira Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     text-align: center;
+    margin-bottom: 54px;
+    padding: 0 7.7%;
 }
 section.home2.product .carousel .carousel-indicators {
-    bottom: -60px;
+    bottom: -90px;
+    gap: 18px;
 }
 section.home2.product .carousel .carousel-indicators button {
     background-color: black;
@@ -158,10 +174,16 @@ section.home2.product .row .icon {
     display: flex;
     justify-content: center;
 }
+section.home2.product .row .text-caption {
+    margin-top: 30px;
+}
 section.home2.product .row .text-caption p {
     font-size: 13.35px;
     font-weight: 600;
     text-align: center;
+}
+section.home2.product .view-product {
+    margin-top: 120px;
 }
 section.home2.product .view-product button {
     height: 43px;
@@ -172,8 +194,6 @@ section.home2.product .view-product button {
     align-items: center;
     gap: 16px;
     border-radius: 30px;
-    position: relative;
-    top: 58px;
     margin: auto;
 }
 section.home2.product .view-product button i {
@@ -192,8 +212,7 @@ section.home2.product .view-product button {
 
 /* home 3 process start */
 section.home3.process {
-    margin-top: 80px;
-    max-height: 632px;
+    margin-top: 50px;
 }
 section.home3.process .container {
     
@@ -214,9 +233,18 @@ section.home3.process .blocks_box_banner {
     height: 100%;
     width: auto;
 }
+section.home3.process .image-phone {
+    height: 100%;
+    width: auto;
+}
 section.home3.process .image-phone img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
+}
+section.home3.process .container,
+section.home3.process .container .col-md-5 {
+    padding-left: 0;
+    padding-right: 0;
 }
 section.home3.process .blocks_box_banner .col-md-7 {
     display: inline-flex;
@@ -224,18 +252,21 @@ section.home3.process .blocks_box_banner .col-md-7 {
 }
 section.home3.process .text-caption {
     position: relative;
-    right: 12%;
+    /* right: 5%; */
+    left: 11%;
 }
 section.home3.process .text-caption h3 {
     font-size: 35px;
     font-weight: 700;
     margin-bottom: 28px;
+    padding-right: 16%;
 } 
 section.home3.process .text-caption p {
     font-family: 'Fira Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;   
     margin-bottom: 40px; 
+    padding-right: 25%;
 }
 section.home3.process .text-caption button {
     height: 43px;
@@ -263,7 +294,7 @@ section.home3.process .text-caption button {
 
 /* Footer start */
 footer.footer {
-    margin-top: 130px;
+    margin-top: 139px;
     background-color: #f4f4f4;
 }
 /* footer.footer .container .row {
@@ -287,7 +318,7 @@ footer.footer .left .img img {
     padding-right: 20px;
 }
 footer.footer .text-caption h3 {
-    font-size: 24.88px;
+    font-size: 25px;
     font-weight: 600;
     line-height: 26px;
 }
@@ -296,7 +327,7 @@ footer.footer .text-caption h3 strong {
 }
 footer.footer .text-caption p {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 14.49px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 16px;
     color: #4c4c4c;
@@ -317,13 +348,13 @@ footer.footer .list-items .item {
     border-right: solid black 0.5px;
     text-align: center;
     height: 72px;
-    width: 200px;
+    width: 208px;
 }
 footer.footer .list-items .item:last-of-type {
     border: none;
 }
 footer.footer .list-items .icon {
-    padding-bottom: 8px;
+    padding-bottom: 12px;
 }
 footer.footer .list-items .item p {
     font-size: 13px;
@@ -341,7 +372,7 @@ section.copyright {
 }
 section.copyright {
     /* max-height: 90px; */
-    margin-top: 20px;
+    margin-top: 12px;
 }
 section.copyright .container {
     height: 90px;
@@ -354,13 +385,15 @@ section.copyright .text-caption h4 {
     font-weight: 500;
 }
 section.copyright .text-caption p {
-    font-size: 10.96px ;
+    font-size: 11px ;
     font-weight: 500;
     color: #b9b9b9;
+    margin-bottom: 7px;
 }
 section.copyright .btn-back {
     background-color: #f8f8f8;
     position: relative;
+    height: 45px;
 }
 section.copyright .btn-back button {
     display: flex;
@@ -419,6 +452,7 @@ section.copyright .btn-back button {
     }
     section.home1.carousel .carousel-item .text-caption h3 {
         font-size: 28px;
+        line-height: 32px;
     }
     /* Home 1 carousel end */
     section.home3.process .text-caption h3 {
@@ -454,6 +488,9 @@ section.copyright .btn-back button {
     }
     section.home3.process .img-banner img {
         max-width: 350px;
+    }
+    section.home3.process .text-caption {
+        left: 0;
     }
     section.home3.process .text-caption h3 {
         font-size: 18px;
@@ -510,7 +547,7 @@ section.copyright .btn-back button {
     section.home2.product .view-product button {
         
         height: 33px;
-        width: 208px;
+        width: 236px;
         background-color: black;
         border-radius: 30px;
     }
