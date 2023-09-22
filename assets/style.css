@@ -7,7 +7,7 @@
 /* Header start */
 
 header.header {
-    height: 112px;
+    height: 113px;
     margin-left: 5%;
     margin-right: 5%;
     display: grid;
@@ -20,6 +20,7 @@ nav {
 nav .container-fluid {
     display: flex;
     justify-content: space-between;
+    padding-top: 12px;
 }
 nav .nav-left,
 nav .nav-right {
@@ -29,10 +30,10 @@ nav .nav-right {
 nav .nav-left .logo-parent {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 18px;
 }
 nav .nav-left .logo-parent .logo-text {
-    gap: 10px;
+    gap: 18px;
     align-items: flex-end;
 }
 nav .nav-left .logo-parent .text p {
@@ -43,7 +44,7 @@ nav .nav-left .logo-parent .text p {
     color: black;
 }
 nav .nav-left button {
-    padding-right: 30px;
+    padding-right: 53px;
 }
 nav .nav-right .logo-wa button {
     padding-left: 20px;
@@ -93,11 +94,12 @@ section.home1.carousel .carousel-item .text-caption {
     position: absolute;
     left: 13.1%;
     /* top: 16%; */
-    bottom: 173px;
+    bottom: 176px;
     width: 43%;
 }
 section.home1.carousel .carousel-item .text-caption p {
     font-size: 17px;
+    font-weight: 500;
     color: #fff;
     margin-bottom: 28px;
     line-height: 26px;
@@ -108,7 +110,7 @@ section.home1.carousel .carousel-item .text-caption h3 {
     font-size: 40px;
     color: #fff;
     margin-bottom: 27px;
-    line-height: 42px;
+    line-height: 44px;
 }
 section.home1.carousel .carousel-item .text-caption button {
     display: flex;
